@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="snorlax.png" type="image/x-icon">
+    <title>Vamos Orar!</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+    <div id="menu" class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="nada.html"><i class="bi bi-house"></i> Home</a></li>
+            <li><a href="nada.html"><i class="bi bi-film"></i></i> Video</a></li>
+            <li><a href="nada.html"><i class="bi bi-person"></i> Canal</a></li>
+            <li><a href="#"><i class="bi bi-gear"></i> Configurações</a></li>
+        </ul>
+            <div class="gato-container">
+                <img src="gato.png" alt="gato" class="gato-img">
+            </div>
+    </div>
+
+    <div class="content">
+        <h1>Ajuda Por Favor</h1>
+        <p>Aqui estão algumas informações para ajudar sobre o meu trabalho, não façam besteira!</p>
+
+        <div class="button-container">
+            <button class="toggle-button" id="toggleButton">Sistemas/Tribunais <i class="bi bi-chevron-down"></i></button>
+            <button class="toggle-button" id="toggleButton2">Passo a passo de docs <i class="bi bi-chevron-down"></i></button>
+            <button class="toggle-button" id="toggleButton3">Astrea <i class="bi bi-chevron-down"></i></button>
+        </div>
+
+        <div id="info" class="hidden"> 
+            <ul>
+                <li>8.01 - AC <strong>e-SAJ</strong></li> 
+                <li>8.02 - AL <strong>e-SAJ</strong></li>
+                <li>8.03 - AP <strong>PJE</strong></li>  
+                <li>8.04 - AM <strong>e-SAJ / PROJUDI</strong></li>
+                <li>8.05 - BA <strong>PJE / PROJUDI</strong></li>
+                <li>8.06 - CE <strong>PJE / e-SAJ</strong></li>
+                <li>8.07 - DF <strong>PJE</strong></li>  
+                <li>8.08 - ES <strong>PJE</strong></li>
+                <li>8.09 - GO <strong>PROJUDI</strong></li>  
+                <li>8.10 - MA <strong>PJE</strong></li>
+                <li>8.11 - MT <strong>PJE</strong></li>  
+                <li>8.12 - MS <strong>e-SAJ</strong></li>
+                <li>8.13 - MG <strong>PJE / THEMIS</strong></li>  
+                <li>8.14 - PA <strong>PJE</strong></li>
+                <li>8.15 - PB <strong>PJE</strong></li>
+                <li>8.16 - PR <strong>PROJUDI</strong></li>
+                <li>8.17 - PE <strong>PJE</strong></li>  
+                <li>8.18 - PI <strong>PJE</strong></li>
+                <li>8.19 - RJ <strong>PJE / DCP</strong></li>  
+                <li>8.20 - RN <strong>PJE</strong></li>
+                <li>8.21 - RS <strong>EPROC</strong></li>  
+                <li>8.22 - RO <strong>PJE</strong></li>
+                <li>8.23 - RR <strong>PROJUDI</strong></li>  
+                <li>8.24 - SC <strong>EPROC</strong></li>
+                <li>8.25 - SE</li>  
+                <li>8.26 - SP <strong>e-SAJ</strong></li>
+                <li>8.27 - TO <strong>EPROC</strong></li>
+                <li>4.01 - AC / AM / AP / BA / DF / GO / MA / MT / PA / PI / RO / RR / TO <strong>PJE</strong></li>
+                <li>4.02 - ES / RJ <strong>EPROC</strong></li>
+                <li>4.03 - SP <strong>PJE</strong></li>
+                <li>4.04 - RS / SC / PR <strong>EPROC</strong></li>
+                <li>4.05 - AL / CE / PB / PE / RN / SE</li>
+                <li>4.06 - MG <strong>PJE / EPROC</strong></li>
+            </ul>
+        </div>
+
+        <div id="info2" class="hidden">
+            <ol>
+                <li>Filtrar a Distribuição - Colunas: J - vazia / I - conter data / H - estar como SIM</li><br>
+                <li>Copiar numero de processo e abrir no TJ para verificar se precisa de carta de revogação (caso tenha adv no processo)</li>
+                <ul><strong>Obs: Caso seja uma revisional sem ação contrária, pular esta segunda etapa</strong></ul><br>
+                <li>Copiar o nome do cliente e procurar no drive</li>
+                <ul>
+                    <li><strong>Obs: verificar a data da pasta (se há uma nova ou usaram a mesma).</strong></li>
+                    <li><strong>Caso não apareça a pasta, pode ser que:</strong>
+                        <ol>
+                            <li><strong>não tenha a pasta</strong></li>
+                            <li><strong>pode estar com outro nome (verificar em boletagem o contratante)</strong></li>
+                        </ol>
+                    </li><br>
+                </ul>
+                <li>Verificar documentações de acordo com o papel</li><br>
+                <li>Caso esteja tudo certo com o pagamento confirmado na coluna L, colocar a data na coluna J</li>
+                <ul>
+                    <li><strong>se não tiver a confirmação de pagamento deixar na coluna K como "agd pgto" para melhor controle e de que já viu as documentações</strong></li>
+                </ul><br>
+                <li>Caso falte ou esteja errado, deixar a coluna H como "NÃO" e colocar a justificativa na coluna K</li><br>
+                <li>Logo em seguida abrir a planilha de "Docs pendentes" e preencher a ultima linha</li><br>
+                <li>Após, abrir a planilha de "Histórico Check Doc" (pelo email de andamentos) e preencher também</li><br>
+            </ol>
+            <li><strong>PRONTO!</strong></li>
+        </div>
+
+        <div id="info3" class="hidden">
+            <div class="button-container">
+                <button id="toggleButton3a">Publicação <i class="bi bi-chevron-down"></i></button>
+                <button id="toggleButton3b">Tarefas <i class="bi bi-chevron-down"></i></button>
+            </div>
+            <div id="subInfo1" class="hidden">
+                <ol>
+                    <li>Ao clicar em "Publicações" verificar se há mais de 1 erro na captura das intimações</li>
+                    <ul><li><strong>Obs: deve haver somente 1, pois o PR não conecta</strong></li></ul><br>
+                    <li>Verificar as publicações do dia (pode haver do dia anterior ou dos finais de semana) e filtrar por "Não tratadas"</li><br>
+                    <li>verificar qual adv está responsável pelo processo e abrir um prazo em adicionar "+"</li>
+                    <ul>
+                        <li>Colocar no Título do prazo para "analisar"</li>
+                        <li>Alerta: 2 dias antes</li>
+                        <li>Definir data limite para 5 dias corridos do dia em que recebeu a publicação (caso caia em dia de final de semana/feriado pular para o próximo dia útil)</li>
+                        <li>Definir o responsável pelo o que foi visto no começo (caso não lembre: assim que clicar em salvar aparecerá quem é o responsável. Certifique que é o mesmo responsável)</li>
+                    </ul><br>
+                    <li>Clicar em <strong>"Concluir"</strong> e Pronto.</li><br>
+                    <ul><li>Obs: <strong>Pode ser que alguns processos já venham com o prazo definido no canto inferior esquerdo (9 dias, 8 dias,..), seguir com o prazo do dia apresentado mantendo a regra do passo 3!</strong></li></ul>
+                </ol>
+                <li><strong>Caso apareça um processo que não está cadastrado</strong></li><br>
+                <ol>
+                    <li>Verificar se o processo está em nome de Rodolfo Couto (caso não esteja pode descartar)</li>
+                    <li>copiar o numero do processo e cadastrar na base geral e no próprio Astrea</li>
+                    <li>Logo em seguida abrir um prazo de 5 dias para o adv responsável.</li>
+                </ol>
+            </div>
+            <div id="subInfo2" class="hidden">
+                <ul>
+                    <li>Processo novo:</li>
+                    <li>Copiar o numero do processo e cadastra-lo na base geral e no próprio Astrea</li>
+                    <li>Registrar no sistema</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        É simples, mas espero que seja útil.
+        <img src="anya forger.png" alt="animação" class="footer-gif">
+    </footer>
+
+    <button id="menuButton" class="menu-button"><i class="bi bi-list"></i></button>
+    <script src="site.js"></script>
+</body>
+</html>

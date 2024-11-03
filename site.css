@@ -1,0 +1,227 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px; /* Largura do menu */
+    height: calc(100% - 100px); /* Altura do menu, considerando a altura do footer */
+    background-color: #181818; /* Fundo escuro */
+    color: #ffffff; /* Texto claro */
+    padding: 20px; /* Espaçamento interno */
+    left: -250px; /* Inicialmente fora da tela */
+    transition: left 0.3s ease; /* Transição suave */
+    z-index: 1000; /* Fica acima do conteúdo */
+}
+
+.sidebar.open {
+    left: 0; /* Move para dentro da tela */
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0; /* Remove margens do ul */
+}
+
+.sidebar li {
+    margin: 10px 0; /* Espaçamento entre itens */
+}
+
+.sidebar a {
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno nos links */
+    transition: background-color 0.3s; /* Transição para o efeito de hover */
+}
+
+.sidebar a:hover {
+    background-color: #292929; /* Fundo escuro ao passar o mouse */
+    border-radius: 5px; /* Arredonda as bordas */
+}
+
+.sidebar a i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    padding-bottom: 60px; /* Para garantir que o conteúdo não sobreponha o footer */
+    transition: margin-left 0.3s ease; /* Para empurrar o conteúdo */
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px; /* Posição inicial */
+    background-color: #5f8fe9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1100; /* Acima do menu */
+    transition: left 0.3s ease; /* Transição suave para a posição do botão */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#info, #info2, #info3, #subInfo1, #subInfo2 {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    margin-left: 100px;
+}
+
+#info.show, #info2.show, #info3.show, #subInfo1.show, #subInfo2.show {
+    display: block;
+    opacity: 1;
+}
+
+.button-container {
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+    margin: 20px 0; 
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 50px; 
+    color: #fff;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+#toggleButton3, #toggleButton2, #toggleButton {
+    background-color: #5f8fe9; 
+}
+
+button:hover {
+    transform: scale(1.05); 
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+#toggleButton3a, #toggleButton3b {
+    margin-top: 5px;
+    background-color: #5f8fe9;
+    width: calc(40% - 10px); 
+}
+
+#toggleButton3a:hover, #toggleButton3b:hover {
+    background-color: #4a74c1; 
+}
+
+ul, ol {
+    margin-left: 20px;
+    color: #333;
+}
+
+footer {
+    height: 60px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #333; 
+    color: white; 
+    position: relative;
+    z-index: 1; /* Aumenta o z-index do footer */
+    margin-top: auto; /* Isso garante que o footer fique sempre na parte inferior */
+}
+
+.footer-gif {
+    position: absolute; 
+    bottom: 0; 
+    left: 0px; 
+    width: 60px; 
+    height: auto; 
+    background-color: transparent;
+    display: inline-block;
+}
+
+.body-dark {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com opacidade */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.button-dark {
+    background-color: #3a6a9d; /* Cor mais escura */
+    color: white; /* Texto em branco para contraste */
+}
+
+html, body {
+    height: 100%; /* Garante que o html e o body ocupem toda a altura da janela */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+.gato-container {
+    position: absolute;
+    bottom: -4px; /* Distância do fundo do menu */
+    left: 90px; /* Distância da esquerda */
+    display: none;
+}
+
+.gato-img {
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.sidebar.open .gato-container {
+    display: block; /* Mostra a imagem do gato quando o menu está aberto */
+}
+
+.back-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #5f8fe9; /* Cor do botão */
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+.back-button:hover {
+    background-color: #4a74c1; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05);
+}
+
+.back-button:active {
+    transform: scale(0.95);
+}
+
+.centered {
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
